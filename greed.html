@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREED</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        
+
+        header {
+            grid-area: header;
+            background: linear-gradient(135deg, #4f63d6, #1728c4);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            
+            background: #1728c4;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            text-align: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #333;
+        }
+
+        .greed{
+            grid-area: content;
+            padding: 2rem;
+            display: grid;
+            grid-auto-rows: minmax(200px, auto);
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            height: 350px;
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem;
+            }
+
+            nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            footer {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Использование грид</h1>
+            
+        </header>
+
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <main>
+            <div class="greed">
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=7cb577fccf8b7354b5248cb8101dd09433fa521f-4253662-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 1</h3>
+                    <p>Описание для карточки 1.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=07944ea8f50c92aa4d3167213fe6f9393e4c5744-8316909-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 2</h3>
+                    <p>Описание для карточки 2. </p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=51260e5ec913c3c7316d863bb12ab8a1703b68b9-9213930-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 3</h3>
+                    <p>Описание для карточки 3.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=9d84f808af791bab25dc52973a4389e1c33d91c8-10767497-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 4</h3>
+                    <p>Описание для карточки 4.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=c184ac25652c038013fa39f13a79d8d2681c394b-9099802-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 5</h3>
+                    <p>Описание для карточки 5.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=59b272bc229cbac786986c439d3697ac39116e52-5508431-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 6</h3>
+                    <p>Описание для карточки 6.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=7cb577fccf8b7354b5248cb8101dd09433fa521f-4253662-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 1</h3>
+                    <p>Описание для карточки 1.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=07944ea8f50c92aa4d3167213fe6f9393e4c5744-8316909-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 2</h3>
+                    <p>Описание для карточки 2. </p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=51260e5ec913c3c7316d863bb12ab8a1703b68b9-9213930-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 3</h3>
+                    <p>Описание для карточки 3.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=9d84f808af791bab25dc52973a4389e1c33d91c8-10767497-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 4</h3>
+                    <p>Описание для карточки 4.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=c184ac25652c038013fa39f13a79d8d2681c394b-9099802-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 5</h3>
+                    <p>Описание для карточки 5.</p>
+                </div>
+                <div class="card">
+                    <img src="https://avatars.mds.yandex.net/i?id=59b272bc229cbac786986c439d3697ac39116e52-5508431-images-thumbs&n=13" alt="Картинка">
+                    <h3>Заголовок 6</h3>
+                    <p>Описание для карточки 6.</p>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>
